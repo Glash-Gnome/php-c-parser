@@ -1,6 +1,6 @@
 # PHPCParser
 
-This is a library to parse C code into an AST. Using PHP.
+This is a library to parse C code into an AST. Using PHP 7.2>.
 
 Yes, this is an extraordinarily bad idea...
 
