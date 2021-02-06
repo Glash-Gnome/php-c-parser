@@ -12,10 +12,10 @@ class Token {
     const WHITESPACE = 5;
     const OTHER = 6;
 
-    public int $type;
-    public string $value;
-    public string $file;
-    public ?Token $next;
+    public $type;
+    public $value;
+    public $file;
+    public $next;
 
     public function __construct(int $type, string $value, string $file, ?Token $next = null) {
         $this->type = $type;

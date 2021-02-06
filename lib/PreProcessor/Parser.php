@@ -6,7 +6,7 @@ namespace PHPCParser\PreProcessor;
 
 class Parser {
 
-    private Tokenizer $tokenizer;
+    private $tokenizer;
 
     public function __construct(Tokenizer $tokenizer = null) {
         $this->tokenizer = $tokenizer ?? new Tokenizer;

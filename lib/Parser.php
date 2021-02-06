@@ -9,19 +9,19 @@ use PHPCParser\Node\Stmt\ValueStmt\Expr;
  */
 class Parser extends ParserAbstract
 {
-    protected int $tokenToSymbolMapSize = 330;
-    protected int $actionTableSize      = 508;
-    protected int $gotoTableSize        = 275;
+    protected $tokenToSymbolMapSize = 330;
+    protected $actionTableSize      = 508;
+    protected $gotoTableSize        = 275;
 
-    protected int $invalidSymbol       = 99;
-    protected int $errorSymbol         = 1;
-    protected int $defaultAction       = -32766;
-    protected int $unexpectedTokenRule = 32767;
+    protected $invalidSymbol       = 99;
+    protected $errorSymbol         = 1;
+    protected $defaultAction       = -32766;
+    protected $unexpectedTokenRule = 32767;
 
-    protected int $YY2TBLSTATE = 176;
-    protected int $numNonLeafStates  = 258;
+    protected $YY2TBLSTATE = 176;
+    protected $numNonLeafStates  = 258;
 
-    protected array $symbolToName = array(
+    protected $symbolToName = array(
         "EOF",
         "error",
         "IDENTIFIER",
@@ -123,7 +123,7 @@ class Parser extends ParserAbstract
         "';'"
     );
 
-    protected array $tokenToSymbol = array(
+    protected $tokenToSymbol = array(
             0,   99,   99,   99,   99,   99,   99,   99,   99,   99,
            99,   99,   99,   99,   99,   99,   99,   99,   99,   99,
            99,   99,   99,   99,   99,   99,   99,   99,   99,   99,
@@ -159,7 +159,7 @@ class Parser extends ParserAbstract
            65,   66,   67,   68,   69,   70,   71,   72,   73,   74
     );
 
-    protected array $action = array(
+    protected $action = array(
           201,  264,  265,  268,  269,  112,   81,  113,  114,    0,
           335,  336,  337,  338,  339,  340,  341,  342,  343,  344,
           455,    9,  197,  281,  282,   34,  396,   84,  266,  231,
@@ -213,7 +213,7 @@ class Parser extends ParserAbstract
           522,  495,  517,  512,  526,  348,  511,  525
     );
 
-    protected array $actionCheck = array(
+    protected $actionCheck = array(
             2,    3,    4,    5,    6,    7,   78,    9,   10,    0,
            19,   20,   21,   22,   23,   24,   25,   26,   27,   28,
             2,   75,    8,    9,   10,   79,   98,   79,   30,   81,
@@ -267,7 +267,7 @@ class Parser extends ParserAbstract
            98,   98,   98,   98,   98,   98,   98,   98
     );
 
-    protected array $actionBase = array(
+    protected $actionBase = array(
           109,   -2,   41,  197,  162,  162,  162,  162,  135,  237,
           108,  242,  242,  242,  242,  242,  242,  242,  242,  242,
           242,  242,  242,    9,   18,  390,  142,   62,  105,  105,
@@ -314,7 +314,7 @@ class Parser extends ParserAbstract
             0,  339,  339,  339
     );
 
-    protected array $actionDefault = array(
+    protected $actionDefault = array(
         32767,32767,32767,32767,32767,32767,32767,32767,32767,32767,
           106,32767,32767,32767,32767,32767,32767,32767,32767,32767,
         32767,32767,32767,32767,32767,32767,32767,32767,   94,   96,
@@ -343,7 +343,7 @@ class Parser extends ParserAbstract
         32767,32767,32767,32767,32767,32767,  256,32767
     );
 
-    protected array $goto = array(
+    protected $goto = array(
           300,   60,   60,   60,   60,  229,  502,  504,  503,  256,
           515,  516,  520,  518,  513,  521,  519,  159,  160,  161,
           162,  532,  196,  215,  216,  187,  394,  394,  394,  148,
@@ -374,7 +374,7 @@ class Parser extends ParserAbstract
             0,  245,  530,  406,  534
     );
 
-    protected array $gotoCheck = array(
+    protected $gotoCheck = array(
            15,   37,   37,   37,   37,   66,   66,   66,   66,   66,
            66,   66,   66,   66,   66,   66,   66,   20,   20,   20,
            20,   68,   11,   11,   11,   11,   48,   48,   48,   55,
@@ -405,7 +405,7 @@ class Parser extends ParserAbstract
            -1,   30,   31,   30,   31
     );
 
-    protected array $gotoBase = array(
+    protected $gotoBase = array(
             0,    0,    0,    0,    0,  136,    0,    0,   84,    0,
            93,   18,    0,    0,   95,   -7,    0,    2,   58,   27,
           -83,   10,   65,   60,   64,   57,   61,    0,  153,    0,
@@ -416,7 +416,7 @@ class Parser extends ParserAbstract
             0,    0,    0,    0,   78,   91,    0,    0
     );
 
-    protected array $gotoDefault = array(
+    protected $gotoDefault = array(
         -32768,   23,  275,  260,  261,  152,  263,  184,  345,  171,
           271,  249,  116,  155,  167,  115,  108,  302,  133,  144,
           145,  124,  146,  188,  189,  190,  191,  147,  332,   83,
@@ -427,7 +427,7 @@ class Parser extends ParserAbstract
           499,  500,  501,    2,  507,  527,  529,   25
     );
 
-    protected array $ruleToNonTerminal = array(
+    protected $ruleToNonTerminal = array(
             0,    2,    2,    2,    2,    2,    3,    3,    3,    7,
             4,    4,    6,    9,    9,   10,   10,   12,   12,   12,
            12,   12,   12,   12,   12,   12,   12,   13,   13,   15,
@@ -458,7 +458,7 @@ class Parser extends ParserAbstract
             1,   75,   75,   76,   76,   77,   77
     );
 
-    protected array $ruleToLength = array(
+    protected $ruleToLength = array(
             1,    1,    1,    1,    3,    1,    1,    1,    1,    1,
             1,    1,    6,    1,    3,    3,    3,    1,    4,    3,
             4,    3,    3,    2,    2,    6,    7,    1,    3,    1,
@@ -489,7 +489,7 @@ class Parser extends ParserAbstract
             2,    1,    1,    4,    3,    1,    2
     );
 
-    protected array $productions = array(
+    protected $productions = array(
         "\$start : translation_unit",
         "primary_expression : IDENTIFIER",
         "primary_expression : constant",

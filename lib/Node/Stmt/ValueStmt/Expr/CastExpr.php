@@ -7,8 +7,8 @@ use PHPCParser\Node\Type;
 
 class CastExpr extends Expr
 {
-    public Expr $expr;
-    public TypeRefExpr $type;
+    public $expr;
+    public $type;
 
     public function __construct(Expr $expr, TypeRefExpr $type, array $attributes = []) {
         parent::__construct($attributes);

@@ -7,8 +7,8 @@ use PHPCParser\Node\Stmt\ValueStmt\Expr;
 
 class CompleteArray extends DirectDeclarator
 {
-    public DirectDeclarator $declarator;
-    public Expr $size;
+    public $declarator;
+    public $size;
 
     public function __construct(DirectDeclarator $declarator, Expr $size, array $attributes = []) {
         parent::__construct($attributes);

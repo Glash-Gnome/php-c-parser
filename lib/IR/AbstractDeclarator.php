@@ -6,8 +6,8 @@ use PHPCParser\IR;
 
 class AbstractDeclarator extends IR
 {
-    public ?QualifiedPointer $pointer;
-    public ?DirectAbstractDeclarator $declarator;
+    public $pointer;
+    public $declarator;
 
 
     public function __construct(?QualifiedPointer $pointer, ?DirectAbstractDeclarator $declarator, array $attributes = []) {

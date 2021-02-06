@@ -6,7 +6,7 @@ use PHPCParser\IR\DirectDeclarator;
 
 class IncompleteArray extends DirectDeclarator
 {
-    public DirectDeclarator $declarator;
+    public $declarator;
 
     public function __construct(DirectDeclarator $declarator, array $attributes = []) {
         parent::__construct($attributes);

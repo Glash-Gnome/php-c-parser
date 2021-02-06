@@ -7,7 +7,7 @@ use PHPCParser\Node\Type;
 
 class IncompleteArrayType extends ArrayType
 {
-    public Type $parent;
+    public $parent;
 
     public function __construct(Type $parent, array $attributes = []) {
         parent::__construct($attributes);

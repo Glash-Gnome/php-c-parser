@@ -17,8 +17,14 @@ struct B {
   struct A *b;
 };';
 
-    protected CParser $parser;
-    protected Printer $printer;
+    /*
+     * @var CParser $parser
+     */
+    protected $parser;
+    /*
+     * @var Printer $printer
+     */
+    protected $printer;
 
     public function setUp(): void {
         $this->parser = new CParser;

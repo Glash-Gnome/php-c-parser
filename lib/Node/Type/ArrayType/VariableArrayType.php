@@ -8,8 +8,8 @@ use PHPCParser\Node\Stmt\ValueStmt\Expr;
 
 class VariableArrayType extends ArrayType
 {
-    public Type $parent;
-    public Expr $size;
+    public $parent;
+    public $size;
 
     public function __construct(Type $parent, Expr $size, array $attributes = []) {
         parent::__construct($attributes);

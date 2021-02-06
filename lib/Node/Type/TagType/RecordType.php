@@ -7,7 +7,7 @@ use PHPCParser\Node\Decl\NamedDecl\TypeDecl\TagDecl\RecordDecl;
 
 class RecordType extends TagType
 {
-    public RecordDecl $decl;
+    public $decl;
 
     public function __construct(RecordDecl $decl, array $attributes = []) {
         parent::__construct($attributes);

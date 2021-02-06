@@ -6,8 +6,8 @@ use PHPCParser\Node\Stmt\ValueStmt\Expr;
 
 class CallExpr extends Expr
 {
-    public Expr $fn;
-    public array $args;
+    public $fn;
+    public $args;
 
     public function __construct(Expr $fn, array $args, array $attributes = []) {
         parent::__construct($attributes);

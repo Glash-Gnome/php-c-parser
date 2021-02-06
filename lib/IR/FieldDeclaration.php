@@ -7,8 +7,8 @@ use PHPCParser\Node;
 
 class FieldDeclaration extends IR
 {
-    public ?Declarator $declarator;
-    public ?Node\Stmt $initializer;
+    public $declarator;
+    public $initializer;
 
 
     public function __construct(?Declarator $declarator, ?Node\Stmt $initializer, array $attributes = []) {

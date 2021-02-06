@@ -20,8 +20,8 @@ class UnaryOperator extends Expr
     const KIND_SIZEOF = 11;
     const KIND_ALIGNOF = 12;
 
-    public int $kind;
-    public Expr $expr;
+    public $kind;
+    public $expr;
 
     public function __construct(Expr $expr, int $kind, array $attributes = []) {
         parent::__construct($attributes);

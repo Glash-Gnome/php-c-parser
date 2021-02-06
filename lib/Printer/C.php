@@ -15,7 +15,7 @@ use PHPCParser\Printer;
 class C implements Printer
 {
 
-    public bool $omitConst = true;
+    public $omitConst = true;
 
     public function print(TranslationUnitDecl $node): string {
         return $this->printNode($node, 0);

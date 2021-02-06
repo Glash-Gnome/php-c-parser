@@ -6,7 +6,7 @@ use PHPCParser\Node\Type;
 
 class BuiltinType extends Type
 {
-    public string $name;
+    public $name;
 
     public function __construct(string $name, array $attributes = []) {
         parent::__construct($attributes);

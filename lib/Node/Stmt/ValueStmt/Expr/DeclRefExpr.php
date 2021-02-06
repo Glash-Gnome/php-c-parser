@@ -7,8 +7,8 @@ use PHPCParser\Node\Decl;
 
 class DeclRefExpr extends Expr
 {
-    public string $name;
-    public ?Decl $decl;
+    public $name;
+    public $decl;
 
     public function __construct(string $name, ?Decl $decl, array $attributes = []) {
         parent::__construct($attributes);

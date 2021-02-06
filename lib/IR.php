@@ -4,7 +4,7 @@ namespace PHPCParser;
 abstract class IR
 {
     
-    public array $attributes;
+    public $attributes;
     
     public function __construct(array $attributes = []) {
         $this->attributes = $attributes;

@@ -6,7 +6,7 @@ use PHPCParser\Node\Type;
 
 class ParenType extends Type
 {
-    public Type $parent;
+    public $parent;
 
     public function __construct(Type $parent, array $attributes = []) {
         parent::__construct($attributes);

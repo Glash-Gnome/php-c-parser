@@ -7,11 +7,11 @@ namespace PHPCParser;
 use PHPCParser\PreProcessor\Token;
 
 class Context {
-    private array $definitions = [];
+    private $definitions = [];
     
-    public array $headerSearchPaths = [];
+    public $headerSearchPaths = [];
 
-    public Scope $scope;
+    public $scope;
 
     const DEFAULT_HEADER_SEARCH_PATHS = [
         '/usr/local/include',

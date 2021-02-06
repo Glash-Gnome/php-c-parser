@@ -7,9 +7,9 @@ use PHPCParser\Node\TranslationUnitDecl;
 class CParser
 {
 
-    private Context $context;
-    private Parser $parser;
-    private array $headerSearchPaths = [];
+    private $context;//Context
+    private $parser;//Parser 
+    private $headerSearchPaths = array();
 
     public function __construct() {
         $this->parser = new Parser(new Lexer);

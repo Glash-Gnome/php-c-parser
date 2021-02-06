@@ -6,7 +6,7 @@ use PHPCParser\Node\Stmt\ValueStmt\Expr;
 
 class IntegerLiteral extends Expr
 {
-    public string $value;
+    public $value;
 
     public function __construct(string $value, array $attributes = []) {
         parent::__construct($attributes);

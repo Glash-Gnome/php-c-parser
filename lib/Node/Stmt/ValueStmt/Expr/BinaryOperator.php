@@ -40,9 +40,9 @@ class BinaryOperator extends Expr
     const KIND_XOR_ASSIGN  = self::KIND_ASSIGN | self::KIND_BITWISE_XOR;
     const KIND_OR_ASSIGN   = self::KIND_ASSIGN | self::KIND_BITWISE_OR;
 
-    public int $kind;
-    public Expr $left;
-    public Expr $right;
+    public $kind;
+    public $left;
+    public $right;
 
     public function __construct(Expr $left, Expr $right, int $kind, array $attributes = []) {
         parent::__construct($attributes);

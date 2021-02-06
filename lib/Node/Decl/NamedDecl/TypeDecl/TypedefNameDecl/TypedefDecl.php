@@ -9,8 +9,8 @@ use PHPCParser\Node\Type;
 class TypedefDecl extends TypedefNameDecl
 {
 
-    public string $name;
-    public Type $type;
+    public $name;
+    public $type;
 
     public function __construct(string $name, Type $type, array $attributes = []) {
         parent::__construct($attributes);

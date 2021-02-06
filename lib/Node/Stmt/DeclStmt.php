@@ -7,7 +7,7 @@ use PHPCParser\Node\Stmt;
 
 class DeclStmt extends Stmt
 {
-    public DeclGroup $declarations;
+    public $declarations;
 
     public function __construct(DeclGroup $declarations, array $attributes = []) {
         parent::__construct($attributes);

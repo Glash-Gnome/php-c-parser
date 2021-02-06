@@ -8,7 +8,7 @@ use PHPCParser\Node\Stmt\ValueStmt\Expr;
 class ReturnStmt extends Stmt
 {
 
-    public ?Expr $result;
+    public $result;
 
     public function __construct(?Expr $result, array $attributes = []) {
         $this->result = $result;

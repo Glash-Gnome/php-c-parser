@@ -11,9 +11,9 @@ class RecordDecl extends TagDecl
     const KIND_STRUCT = 1;
     const KIND_UNION = 2;
 
-    public int $kind;
-    public ?string $name;
-    public ?array $fields;
+    public $kind;
+    public $name;
+    public $fields;
 
     public function __construct(int $kind, ?string $name, ?array $fields, array $attributes = []) {
         parent::__construct($attributes);

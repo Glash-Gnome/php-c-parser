@@ -9,11 +9,11 @@ use PHPCParser\PreProcessor\Parser;
 
 class PreProcessor {
 
-    private Parser $parser;
-    private array $headers = [];
-    private Context $context;
-    private ?CallStack $callStack = null;
-    private ?Token $rerun = null;
+    private $parser;
+    private $headers = [];
+    private $context;
+    private $callStack = null;
+    private $rerun = null;
 
     public function __construct(Context $context, Parser $parser = null) {
         $this->parser = $parser ?? new Parser;
@@ -382,11 +382,11 @@ next:
 }
 
 class CallStack {
-    public string $toCall;
-    public int $openCount = 0;
-    public array $args = [];
-    public Token $currentArg;
-    public ?CallStack $prior;
+    public $toCall;
+    public $openCount = 0;
+    public $args = [];
+    public $currentArg;
+    public $prior;
 
     public function __construct(string $toCall, ?CallStack $prior) {
         $this->toCall = $toCall;

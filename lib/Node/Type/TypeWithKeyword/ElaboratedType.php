@@ -7,8 +7,8 @@ use PHPCParser\Node\Type;
 
 class ElaboratedType extends TypeWithKeyword
 {
-    public string $keyword;
-    public Type $type;
+    public $keyword;
+    public $type;
 
     public function __construct(string $keyword, Type $type, array $attributes = []) {
         parent::__construct($attributes);

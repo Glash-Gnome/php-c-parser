@@ -11,7 +11,7 @@ use PHPCParser\Node\Stmt;
 class Compiler
 {
 
-    protected Scope $scope;
+    protected $scope;
 
     public function begin(Scope $scope) {
         $this->scope = $scope;

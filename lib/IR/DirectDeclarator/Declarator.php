@@ -7,7 +7,7 @@ use PHPCParser\IR\Declarator as CoreDeclarator;
 
 class Declarator extends DirectDeclarator
 {
-    public CoreDeclarator $declarator;
+    public $declarator;
 
     public function __construct(CoreDeclarator $declarator, array $attributes = []) {
         parent::__construct($attributes);

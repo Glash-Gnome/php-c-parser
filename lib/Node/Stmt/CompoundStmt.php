@@ -6,7 +6,7 @@ use PHPCParser\Node\Stmt;
 
 class CompoundStmt extends Stmt
 {
-    public array $stmts;
+    public $stmts;
 
     public function __construct(array $stmts, array $attributes = []) {
         parent::__construct($attributes);

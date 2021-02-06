@@ -6,7 +6,7 @@ use PHPCParser\NodeAbstract;
 
 class DeclGroup extends NodeAbstract
 {
-    public array $declarations;
+    public $declarations;
 
     public function __construct(array $declarations, array $attributes = []) {
         parent::__construct($attributes);

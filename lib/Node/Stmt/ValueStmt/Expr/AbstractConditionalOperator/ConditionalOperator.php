@@ -9,9 +9,9 @@ use PHPCParser\Node\Type;
 class ConditionalOperator extends AbstractConditionalOperator
 {
 
-    public Expr $cond;
-    public Expr $ifTrue;
-    public Expr $ifFalse;
+    public $cond;
+    public $ifTrue;
+    public $ifFalse;
 
     public function __construct(Expr $cond, Expr $ifTrue, Expr $ifFalse, array $attributes = []) {
         parent::__construct($attributes);

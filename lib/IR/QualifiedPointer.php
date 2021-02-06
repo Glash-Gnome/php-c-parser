@@ -6,8 +6,8 @@ use PHPCParser\IR;
 
 class QualifiedPointer extends IR
 {
-    public int $qualification;
-    public ?QualifiedPointer $parent;
+    public $qualification;
+    public $parent;
 
 
     public function __construct(int $qualification, ?self $parent, array $attributes = []) {

@@ -7,11 +7,11 @@ use PHPCParser\PreProcessor\Token;
 class Lexer
 {
 
-    private array $tokens;
-    private int $tokenPos = -1;
-    private ?Token $currentToken = null;
-    private array $toEmit = [];
-    private Scope $scope;
+    private $tokens;
+    private $tokenPos = -1;
+    private $currentToken = null;
+    private $toEmit = [];
+    private $scope;
 
     public function begin(Scope $scope, array $tokens): void {
         $this->tokens = $tokens;

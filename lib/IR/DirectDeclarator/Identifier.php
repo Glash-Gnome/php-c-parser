@@ -6,7 +6,7 @@ use PHPCParser\IR\DirectDeclarator;
 
 class Identifier extends DirectDeclarator
 {
-    public string $name;
+    public $name;
 
     public function __construct(string $name, array $attributes = []) {
         parent::__construct($attributes);

@@ -10,9 +10,9 @@ use PHPCParser\Node\Stmt;
 class FieldDecl extends DeclaratorDecl
 {
 
-    public string $name;
-    public Type $type;
-    public ?Node\Stmt $initializer;
+    public $name;
+    public $type;
+    public $initializer;
 
     public function __construct(string $name, Type $type, ?Node\Stmt $initializer, array $attributes = []) {
         parent::__construct($attributes);

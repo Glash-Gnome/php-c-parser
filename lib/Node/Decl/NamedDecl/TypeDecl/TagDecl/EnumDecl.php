@@ -9,8 +9,8 @@ use PHPCParser\Node\Type;
 class EnumDecl extends TagDecl
 {
 
-    public ?string $name;
-    public ?array $fields;
+    public $name;
+    public $fields;
 
     public function __construct(?string $name, ?array $fields, array $attributes = []) {
         parent::__construct($attributes);

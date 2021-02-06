@@ -8,10 +8,10 @@ use PHPCParser\Node\Type;
 
 class FunctionProtoType extends FunctionType
 {
-    public Type $return;
-    public array $params;
-    public array $paramNames;
-    public bool $isVariadic;
+    public $return;
+    public $params;
+    public $paramNames;
+    public $isVariadic;
 
     public function __construct(Type $return, array $params, array $paramNames, bool $isVariadic, array $attributes = []) {
         parent::__construct($attributes);

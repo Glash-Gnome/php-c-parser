@@ -22,8 +22,8 @@ class AttributedType extends Type
     const KIND_INLINE       = 10;
     const KIND_NORETURN     = 11;
 
-    public int $kind;
-    public Type $parent;
+    public $kind;
+    public $parent;
 
     public function __construct(int $kind, Type $parent, array $attributes = []) {
         parent::__construct($attributes);

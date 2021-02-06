@@ -7,7 +7,7 @@ use PHPCParser\Node\Decl\NamedDecl\TypeDecl\TagDecl\EnumDecl;
 
 class EnumType extends TagType
 {
-    public EnumDecl $decl;
+    public $decl;
 
     public function __construct(EnumDecl $decl, array $attributes = []) {
         parent::__construct($attributes);

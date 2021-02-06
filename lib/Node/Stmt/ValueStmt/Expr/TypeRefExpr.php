@@ -7,7 +7,7 @@ use PHPCParser\Node\Type;
 
 class TypeRefExpr extends Expr
 {
-    public Type $type;
+    public $type;
 
     public function __construct(Type $type, array $attributes = []) {
         parent::__construct($attributes);

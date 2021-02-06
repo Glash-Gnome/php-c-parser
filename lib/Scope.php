@@ -4,7 +4,7 @@ namespace PHPCParser;
 
 class Scope {
 
-    private array $entries = [
+    private $entries = [
         'void' => Tokens::T_TYPEDEF_NAME,
         'char' => Tokens::T_TYPEDEF_NAME,
         'bool' => Tokens::T_TYPEDEF_NAME,
@@ -30,11 +30,11 @@ class Scope {
 //        'wchar_t' => Tokens::T_TYPEDEF_NAME,
     ];
 
-    private array $types = [];
-    private array $enums = [];
-    private array $structs = [];
+    private $types = [];
+    private $enums = [];
+    private $structs = [];
 
-    private ?Scope $parent;
+    private $parent;
 
     public function __construct(?Scope $parent = null) {
         $this->parent = $parent;

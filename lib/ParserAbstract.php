@@ -10,62 +10,62 @@ abstract class ParserAbstract
      * The following members will be filled with generated parsing data:
      */
     /** @var int Size of $tokenToSymbol map */
-    protected int $tokenToSymbolMapSize;
+    protected $tokenToSymbolMapSize;
     /** @var int Size of $action table */
-    protected int $actionTableSize;
+    protected $actionTableSize;
     /** @var int Size of $goto table */
-    protected int $gotoTableSize;
+    protected $gotoTableSize;
     /** @var int Symbol number signifying an invalid token */
-    protected int $invalidSymbol;
+    protected $invalidSymbol;
     /** @var int Symbol number of error recovery token */
-    protected int $errorSymbol;
+    protected $errorSymbol;
     /** @var int Action number signifying default action */
-    protected int $defaultAction;
+    protected $defaultAction;
     /** @var int Rule number signifying that an unexpected token was encountered */
-    protected int $unexpectedTokenRule;
-    protected int $YY2TBLSTATE;
+    protected $unexpectedTokenRule;
+    protected $YY2TBLSTATE;
     /** @var int Number of non-leaf states */
-    protected int $numNonLeafStates;
+    protected $numNonLeafStates;
     /** @var int[] Map of lexer tokens to internal symbols */
-    protected array $tokenToSymbol;
+    protected $tokenToSymbol;
     /** @var string[] Map of symbols to their names */
-    protected array $symbolToName;
+    protected $symbolToName;
     /** @var array Names of the production rules (only necessary for debugging) */
-    protected array $productions;
+    protected $productions;
     /** @var int[] Map of states to a displacement into the $action table. The corresponding action for this
      *             state/symbol pair is $action[$actionBase[$state] + $symbol]. If $actionBase[$state] is 0, the
                    action is defaulted, i.e. $actionDefault[$state] should be used instead. */
-    protected array $actionBase;
+    protected $actionBase;
     /** @var int[] Table of actions. Indexed according to $actionBase comment. */
-    protected array $action;
+    protected $action;
     /** @var int[] Table indexed analogously to $action. If $actionCheck[$actionBase[$state] + $symbol] != $symbol
      *             then the action is defaulted, i.e. $actionDefault[$state] should be used instead. */
-    protected array $actionCheck;
+    protected $actionCheck;
     /** @var int[] Map of states to their default action */
-    protected array $actionDefault;
+    protected $actionDefault;
     /** @var callable[] Semantic action callbacks */
-    protected array $reduceCallbacks;
+    protected $reduceCallbacks;
     /** @var int[] Map of non-terminals to a displacement into the $goto table. The corresponding goto state for this
      *             non-terminal/state pair is $goto[$gotoBase[$nonTerminal] + $state] (unless defaulted) */
-    protected array $gotoBase;
+    protected $gotoBase;
     /** @var int[] Table of states to goto after reduction. Indexed according to $gotoBase comment. */
-    protected array $goto;
+    protected $goto;
     /** @var int[] Table indexed analogously to $goto. If $gotoCheck[$gotoBase[$nonTerminal] + $state] != $nonTerminal
      *             then the goto state is defaulted, i.e. $gotoDefault[$nonTerminal] should be used. */
-    protected array $gotoCheck;
+    protected $gotoCheck;
     /** @var int[] Map of non-terminals to the default state to goto after their reduction */
-    protected array $gotoDefault;
+    protected $gotoDefault;
     /** @var int[] Map of rules to the non-terminal on their left-hand side, i.e. the non-terminal to use for
      *             determining the state to goto after reduction. */
-    protected array $ruleToNonTerminal;
+    protected $ruleToNonTerminal;
     /** @var int[] Map of rules to the length of their right-hand side, which is the number of elements that have to
      *             be popped from the stack(s) on reduction. */
-    protected array $ruleToLength;
+    protected $ruleToLength;
     /*
      * The following members are part of the parser state:
      */
     /** @var Lexer Lexer that is used when parsing */
-    protected Lexer $lexer;
+    protected $lexer;
     /** @var mixed Temporary value containing the result of last semantic action (reduction) */
     protected $semValue;
     /** @var array Semantic value stack (contains values of tokens and semantic action results) */
@@ -83,8 +83,8 @@ abstract class ParserAbstract
     /** @var int Error state, used to avoid error floods */
     protected $errorState;
 
-    protected Scope $scope;
-    protected Compiler $compiler;
+    protected $scope;
+    protected $compiler;
 
     /**
      * Initialize $reduceCallbacks map.

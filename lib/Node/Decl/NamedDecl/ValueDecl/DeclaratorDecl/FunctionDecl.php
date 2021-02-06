@@ -10,9 +10,9 @@ use PHPCParser\Node\Stmt;
 class FunctionDecl extends DeclaratorDecl
 {
 
-    public string $name;
-    public Type $type;
-    public ?Stmt\CompoundStmt $stmts;
+    public $name;
+    public $type;
+    public $stmts;
 
     public function __construct(string $name, Type $type, ?Stmt\CompoundStmt $stmts, array $attributes = []) {
         parent::__construct($attributes);
